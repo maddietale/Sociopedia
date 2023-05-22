@@ -4,12 +4,13 @@ import Form from "./Form";
 const LoginPage = () => {
   const theme = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
+  const alt = theme.palette.background.alt;
 
   return (
     <Box>
       <Box
         width={"1000%"}
-        backgroundColor={theme.palette.background.alt}
+        backgroundColor={alt}
         p="1rem 6%"
         textAlign="center"
       >
@@ -17,13 +18,15 @@ const LoginPage = () => {
           Sociopedia
         </Typography>
       </Box>
+      {
       // Form Box
+      }
       <Box
         width={isNonMobileScreens ? "50%" : "93%"}
         p="2rem"
         m="2rem auto"
         borderRadius="1.5rem"
-        backgroundColor={theme.palette.backgroundColor.alt}
+        backgroundColor={alt}
       >
         <Typography variant="h5" fontWeight="500" sx={{ mb: "1.5rem" }}>
           Welcome to Sociopedia, the Social Media for Sociopaths!
