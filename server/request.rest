@@ -1,1 +1,5 @@
 GET http://localhost:3001/auth/users
+
+###
+
+PATCH http://localhost:3001/users/646b52ed81d5bbf7501f007c/646b50bef15eac216aeb2657
